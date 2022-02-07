@@ -1,0 +1,100 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-container {
+        box-shadow: 0 0 .3rem .3rem hsl(0, 0%, 95%);
+        width: 80vw;
+        max-width: 500px;
+        border-radius: .9rem;
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        &-image {
+            padding-top: 1.5rem;
+            & img {
+                height: 10rem;
+                border-radius: 50%;
+                border: 5px solid hsl(0, 0%, 90%);
+            }
+        }
+        &-details {
+            padding-top: 2.5rem;
+            &-name {
+                display: flex;
+                align-items: center;
+                & img {
+                    height: 2rem;
+                }
+                & p {
+                    padding-right: .5rem;
+                }
+            }
+            &-phone {
+                padding: 1rem 0;
+                display: flex;
+                align-items: center;
+                & img {
+                    height: 2rem;
+                }
+                & p {
+                    padding-right: .5rem;
+                }
+            }
+            &-email {
+                display: flex;
+                align-items: center;
+                & img {
+                    height: 2rem;
+                    padding-right: .5rem;
+                }
+                & p {
+                    padding-right: .5rem;
+                }
+            }
+            &-button {
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+span {
+    color: #FE4F60;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:580px) {
+    .main-container {
+        flex-direction: column;
+        &-image {
+            margin-inline: auto;
+        }
+    }
+}
+
+
+/* From cssbuttons.io by @adamgiebl */
+
+button {
+    float: right;
+    color: #090909;
+    padding: 0.7em 1em;
+    font-size: .8rem;
+    border-radius: 0.5em;
+    background: hsl(0, 0%, 95%);
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px hsl(0, 0%, 97%);
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid white;
+}
+
+button:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}

@@ -1,0 +1,39 @@
+<main class="main">
+    <section class="main-container">
+        <article class="main-container-image">
+            <img [src]="picture" alt="" height="128px">
+        </article>
+        <article class="main-container-details">
+            <div class="main-container-details-name">
+                <img [src]="personImage" alt="">
+                <p>Name<span>:</span></p>
+                <h5>{{ name }}</h5>
+            </div>
+            <div class="main-container-details-phone">
+                <img [src]="phoneImage" alt="">
+                <p>Phone<span>:</span></p>
+                <h5>{{ phone }}</h5>
+            </div>
+            <div class="main-container-details-email">
+                <img [src]="emailImage" alt="">
+                <p>Email<span>:</span></p>
+                <h5>{{ email }}</h5>
+            </div>
+            <div class="main-container-details-button">
+                <button (click)="getUsers()">New Person</button>
+            </div>
+        </article>
+    </section>
+</main>
+
+
+
+
+<!--
+
+<p>{{ name }}</p>
+<p>{{ phone }}</p>
+<p>{{ email }}</p>
+<p>{{ gender }}</p> -->
+<router-outlet>
+</router-outlet>
